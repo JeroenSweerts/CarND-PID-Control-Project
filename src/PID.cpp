@@ -27,7 +27,7 @@ void PID::UpdateError(double cte) {
     
 }
 
-double PID::TotalError() {
-    return Kp*p_error + Ki*i_error + Kd*d_error;
+double PID::TotalError(double speed) {
+    return speed*speed*Kp*p_error + speed*Ki*i_error + speed*speed*Kd*d_error;
 }
 
