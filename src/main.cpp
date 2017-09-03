@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
           */
           pid.UpdateError(cte);
           steer_value = pid.TotalError(speed);
-          throttle =0.3;
+          throttle =0.8;
           
           // DEBUG
           std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
