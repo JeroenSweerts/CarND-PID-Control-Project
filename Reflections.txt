@@ -1,0 +1,6 @@
+>>THE EFFECT OF THE P, I, D COMPONENTS:
+
+>>CHOICE OF FINAL P, I, D COMPONENTS:
+I observed that the impact of the Kp and Kd parameters was different for different speeds of the vehicle. I changed the TotalError() function in PID.cpp to make the steer correction a quadratic function of speed for Kp and Kd. The Ki parameter didn't benefit of this trick.
+
+

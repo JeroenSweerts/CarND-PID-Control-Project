@@ -64,8 +64,9 @@ int main(int argc, char *argv[])
           * another PID controller to control the speed!
           */
           pid.UpdateError(cte);
-          steer_value = pid.TotalError(speed);
-          throttle =0.8;
+          //steer_value = pid.TotalError(speed);
+		  steer_value = pid.TotalError(1);
+          throttle = 0.7;
           
           // DEBUG
           std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
